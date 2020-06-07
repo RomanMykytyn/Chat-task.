@@ -1,0 +1,32 @@
+input {
+  border: none;
+}
+
+.search {
+  border: 2px solid gray;
+  display: inline-block;
+  border-radius: 20px;
+  padding: 0;
+  margin: 25px 0 0 0;
+}
+
+.search-field {
+  margin: 0 10px 0 0;
+  width: 280px;
+  font-size: 14px;
+}
+
+.search-btn {
+  border-radius: 50%;
+  width: 25px;
+  vertical-align: middle;
+  font-family: 'Material Icons';
+  font-size: 20px;
+}
+
+.search-field, .search-btn {
+  background-color: #d9dada;
+  color: #5f5e5e;
+  outline: none;
+  height: 25px;
+}

@@ -1,0 +1,29 @@
+body {
+  background-color: #d9dada;
+}
+
+#id {
+  display: flex;
+}
+
+aside {
+  border: 1px solid red;
+  width: 350px;
+  height: 100%;
+  margin: 15px 0 0 5px;
+}
+
+img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+
+.icon-box::after {
+  content: 'check_circle_outline';
+  position: relative;
+  left: -20px;
+  font-family: 'Material Icons';
+  color: green;
+}

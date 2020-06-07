@@ -1,0 +1,58 @@
+[
+  {
+    "nameUser": "Superman",
+    "avatarUser": "superman_ava.png",
+    "dateUser": "Feb 12 2017",
+    "conversation": [
+      {
+        "text": "dsdasd gfdgdfg hghfghhg gfgh",
+        "date": "2011-10-10T14:48:00",
+        "isOwner": true
+      },
+      {
+        "text": "aqwerty",
+        "date": "2011-10-10T14:48:00",
+        "isOwner": false
+      },
+      {
+        "text": "dsdasd gfdgdfg hghfghhg gfgh2",
+        "date": "2011-10-10T14:48:00",
+        "isOwner": true
+      }
+    ]
+  },
+  {
+    "nameUser": "Batman",
+    "avatarUser": "batman_ava.jpg",
+    "dateUser": "Feb 12 2017",
+    "conversation": [
+      {
+        "text": "dsdasd gfdgdfg hghfghhg gfgh",
+        "date": "2011-10-10T14:48:00",
+        "isOwner": true
+      },
+      {
+        "text": "aqwerty",
+        "date": "2011-10-10T14:48:00",
+        "isOwner": false
+      },
+      {
+        "text": "dsdasd gfdgdfg hghfghhg gfgh2",
+        "date": "2011-10-10T14:48:00",
+        "isOwner": true
+      }
+    ]
+  },
+  {
+    "nameUser": "Ironman",
+    "avatarUser": "ironman_ava.jpg",
+    "dateUser": "Feb 12 2017",
+    "conversation": []
+  },
+  {
+    "nameUser": "Hulk",
+    "avatarUser": "hulk_ava.jpg",
+    "dateUser": "Feb 12 2017",
+    "conversation": []
+  }
+]
