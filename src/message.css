@@ -1,0 +1,24 @@
+.message {
+  display: flex;
+  margin: 0 10px 20px 0;
+}
+
+.msg-text {
+  min-height: 40px;
+  border: 1px solid black;
+  border-radius: 40px;
+  color: #f3f2f2;
+  font-size: 20px;
+  background-color: #2a3344;
+  display: flex;
+  align-items: center;
+}
+
+.msg-text > p {
+  margin: 0 20px;
+}
+
+.msg-date {
+  font-size: 14px;
+  margin: 5px 0 0 20px;
+}

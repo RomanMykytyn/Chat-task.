@@ -1,16 +1,28 @@
-body {
-  background-color: #d9dada;
+html {
+    -ms-overflow-style: none;  /* IE 10+ */
+    scrollbar-width: none; /* Firefox */
 }
 
-#id {
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+body {
+  background-color: #efefef;
+  margin: 0;
+}
+
+#root {
   display: flex;
 }
 
 aside {
-  border: 1px solid red;
-  width: 350px;
-  height: 100%;
-  margin: 15px 0 0 5px;
+  border-right: 2px solid #d2d2d2;
+  width: 450px;
+  min-width: 450px;
+  height: 100vh;
+  overflow: hidden;
+  background-color: white;
 }
 
 img {
@@ -19,6 +31,9 @@ img {
   border-radius: 50%;
 }
 
+.icon-box {
+  margin-left: 10px;
+}
 
 .icon-box::after {
   content: 'check_circle_outline';
@@ -26,4 +41,23 @@ img {
   left: -20px;
   font-family: 'Material Icons';
   color: green;
+}
+
+.search-box {
+  padding-top: 10px;
+  border-bottom: 2px solid #d2d2d2;
+  background-color: #efefef;
+  height: 140px;
+}
+
+.chat-list {
+  overflow: auto;
+  max-height: calc(100vh - 150px);
+}
+
+.chat-list > h1 {
+  color: #1ac7da;
+  display: inline-block;
+  margin-left: 20px;
+  font-size: 28px;
 }
