@@ -1,4 +1,3 @@
-import './mainWindow.css';
 import ChatHeader from './chatHeader.js';
 import ChatField from './chatField.js';
 import NewMessage from './newMessage.js';

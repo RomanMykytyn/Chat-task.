@@ -1,5 +1,5 @@
-import './message.css';
-//import ChatHeader from './chatHeader.js';
+import './style/message.css';
+import Icon from './icon.js';
 import React, { useState, useEffect } from 'react';
 
 export default function Message(props) {
@@ -17,9 +17,7 @@ export default function Message(props) {
 
   return (
     <div className={ownerMsg}>
-      <div className='icon-box material-icons'>
-        <img src={'./' + props.avatarUser} alt='Oops' />
-      </div>
+      <Icon avatarUser={props.avatarUser} />
       <div className='msg-box'>
         <div className='msg-text'>
           <p>{props.msg.text}</p>

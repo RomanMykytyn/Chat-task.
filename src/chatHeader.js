@@ -1,4 +1,5 @@
-import './chatHeader.css';
+import './style/chatHeader.css';
+import Icon from './icon.js';
 import React, { useState, useEffect } from 'react';
 
 export default function ChatHeader(props) {
@@ -7,9 +8,7 @@ export default function ChatHeader(props) {
     <div className='chat-header'>
       {props.name &&
         <>
-          <div className='icon-box material-icons'>
-            <img src={'./' + props.imgUrl} alt='Oops' />
-          </div>
+          <Icon avatarUser={props.imgUrl} />
           <div className='description-box'>
             <h1>{props.name}</h1>
           </div>

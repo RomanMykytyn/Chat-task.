@@ -1,10 +1,8 @@
-import './newMessage.css';
-//import ChatHeader from './chatHeader.js';
+import './style/newMessage.css';
 import React, { useState, useEffect } from 'react';
 
 export default function NewMessage(props) {
   const [message, setMessage] = useState('');
-  console.log('dddd');
 
   const changeHandler = (e) => {
     setMessage(e.target.value);

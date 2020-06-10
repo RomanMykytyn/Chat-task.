@@ -1,0 +1,17 @@
+.icon-box {
+  margin-left: 10px;
+}
+
+.icon-box::after {
+  content: 'check_circle_outline';
+  position: relative;
+  left: -20px;
+  font-family: 'Material Icons';
+  color: green;
+}
+
+img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
