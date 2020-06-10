@@ -2,18 +2,19 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  border-bottom: 2px solid #d2d2d2;
+  border-bottom: 1px solid #d2d2d2;
   height: 90px;
   cursor: pointer;
 }
 
 .description-box {
   width: 250px;
-  max-height: 90px;
+  max-height: 85px;
   overflow: hidden;
+  font-family: Arial, sans-serif;
 }
 
-.description-box > h3 {
+.description-box > h3, .description-box > h1 {
   margin: 0;
   font-family: 'Lucida Sans Unicode', monospace;
   font-weight: lighter;

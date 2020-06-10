@@ -3,18 +3,24 @@ import Message from './message.js';
 import React, { useState, useEffect } from 'react';
 
 export default function ChatField(props) {
-  //console.log(props.chat);
+  let page = document.getElementById("chatField");
   let list = '';
+
+  useEffect(() => {
+    if (page) {
+      page.scrollTop = page.scrollHeight;
+    }
+  });
+
   if (props.chat.conversation) {
-    //console.log(list);
+    console.log(list);
     list = props.chat.conversation.map(el => (<Message msg={el}
-                                                            key={el.date}
-                                                            avatarUser={props.chat.avatarUser} />));
+                                                       key={el.id}
+                                                       avatarUser={props.chat.avatarUser} />));
   }
 
-
   return (
-    <div className='chatField'>
+    <div className='chatField' id='chatField'>
       {list}
     </div>
   );

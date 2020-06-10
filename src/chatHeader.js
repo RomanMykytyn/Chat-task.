@@ -11,7 +11,7 @@ export default function ChatHeader(props) {
             <img src={'./' + props.imgUrl} alt='Oops' />
           </div>
           <div className='description-box'>
-            <h3>{props.name}</h3>
+            <h1>{props.name}</h1>
           </div>
         </>
       }

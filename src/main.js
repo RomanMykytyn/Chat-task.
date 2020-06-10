@@ -1,4 +1,5 @@
 import './main.css';
+import { v1 as uuidv1 } from 'uuid';
 import { render } from 'react-dom';
 import SearchBar from './search.js';
 import Chat from './chat.js';
@@ -35,6 +36,33 @@ function App() {
     setActiveChat(item);
   }
 
+  const addMessage = (message) => {
+    makeMessage(message, false);
+    fetch('https://api.chucknorris.io/jokes/random')
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+        makeMessage(data.value, true);
+      });
+  }
+
+  const makeMessage = (message, isOwner) => {
+    let date = new Date();
+    let newMsg = {text: message,
+                  date: date,
+                  isOwner: isOwner,
+                  id: uuidv1()};
+    let newData = initialData.map( (el) => {
+      if (el.nameUser === activeChat.nameUser) {
+        el.conversation.push(newMsg);
+        return el;
+      }
+        return el;
+    });
+    setInitialData(newData);
+  };
+
   return (
     <>
       <aside>
@@ -51,7 +79,8 @@ function App() {
                                          getChat={getActiveChat} />))}
         </div>
       </aside>
-        <MainWindow chat={activeChat} />
+        <MainWindow chat={activeChat}
+                    addMessage={addMessage} />
     </>
   );
 }
