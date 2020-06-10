@@ -12,7 +12,6 @@ function App() {
   const [filteredData, setFilteredData] = useState([]);
   const [initialData, setInitialData] = useState([]);
   const [activeChat, setActiveChat] = useState({});
-  console.log(typeof(data));
 
   useEffect(() => {
     setInitialData(data);
